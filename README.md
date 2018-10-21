@@ -48,7 +48,6 @@ ggplotly(BaseLayerA+geom_line(group=1))
 
 ```
 
-```
 title: "Heart Rate of Subjects A,B,C"
 runtime: shiny
 output: html_document
@@ -96,6 +95,7 @@ BaseLayerA<-ggplot(data = heart_rate_neurospyC,
 xlab("time(s/1000)")
 ggplotly(BaseLayerA+geom_line(group=1))
 
+```
 ```
 title: "Systolic Pressure of Subjects A,B,C"
 runtime: shiny
