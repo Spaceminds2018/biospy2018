@@ -2,6 +2,8 @@
 title: "Breathing Rate of Subjects A,B,C"
 runtime: shiny
 output: html_document
+---
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 breathing_rate_neurospyA<-head(read.table("/Users/athulyaajith/Desktop/breathing_rate-neurospyA.csv", sep=","),1000)
@@ -43,6 +45,8 @@ BaseLayerA<-ggplot(data = breathing_rate_neurospyC, aes(x=as.numeric(V1), y = as
 xlab("time(s/1000)")+
 ylab("Breathing Rate(rpm)")
 ggplotly(BaseLayerA+geom_line(group=1))
+
+```
 
 ```
 title: "Heart Rate of Subjects A,B,C"
